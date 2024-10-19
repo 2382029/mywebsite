@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 50px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0; /* Menghapus jarak antara foto dan skills */
+        }
+        .portfolio-item, .skills {
+            flex: 1;
+            margin: 0; /* Menghapus margin */
+            max-width: 48%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table, th, td {
+            border: 1px solid #00ffcc;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #00ffcc;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: #333;
+        }
+        tr:nth-child(odd) {
+            background-color: #444;
+        }
+        .portfolio-item img {
+            width: 400px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .portfolio-item h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .portfolio-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #00ffcc;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            background: rgba(0, 255, 204, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        nav a:hover {
+            color: #121212;
+            background-color: #00ffcc;
+            border-color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Skills</h1>
+
+        <div class="content">
+            <!-- Portfolio Section -->
+            <div class="portfolio-item">
+                <img src="A.jpg" alt="Project 1">
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                        <th>Experience</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>C++</td>
+                        <td>Avarage</td>
+                        <td>1 Year</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Guitar</td>
+                        <td>Avarage</td>
+                        <td>6 years almost 7 years</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Basketball</td>
+                        <td>Advance</td>
+                        <td>5 Years</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gaming</td>
+                        <td>Advance</td>
+                        <td>3 Years</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="myHoliday.html">My Holiday</a>
+        <a href="myregistration.html">Pendaftaran</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>

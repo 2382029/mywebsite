@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to website</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: radial-gradient(circle at top right, #121212, #000000);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('109.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #dddddd;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.profile-container {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+img.profile-pic {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    color: #00ffcc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    background: rgba(0, 255, 204, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+nav a:hover {
+    color: #121212;
+    background-color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Gambar besar sebagai latar belakang -->
+        <img src="109.jpg" alt="Background Image" class="background-image">
+
+        <div class="profile-container">
+            <!-- Foto profil -->
+            <img src="1-342.jpg" alt="Foto Profil Saya" class="profile-pic">
+        </div>
+
+        <h1>Daryl Grandy Karundeng</h1>
+        <p><b>Hello, I'm Daryl Karundeng!</b>
+
+            Born in the vibrant city of Bandung, Cihampelas, I pursued my studies at Universitas Advent Indonesia.</p>
+            <p>This is a simple yet personal website I created to showcase my journey and projects. Feel free to explore and get to know me better!</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portofolio</a>
+            <a href="myHoliday.html">My Holiday</a>
+            <a href="myregistration.html">Pendaftaran</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <footer>
+            &copy; 2024 Daryl Karundeng. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

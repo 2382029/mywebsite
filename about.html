@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: black;
+            background: radial-gradient(circle at top right, #121212, #000000);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 600px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        nav a {
+            color: #00ffcc;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            background: rgba(0, 255, 204, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        nav a:hover {
+            color: #121212;
+            background-color: #00ffcc;
+            border-color: #00ffcc;
+        }
+        .container {
+            margin: 50px;
+        }
+        h1, h2, h3, h4 {
+            margin-bottom: 15px;
+        }
+        p, ul, ol {
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        /* Styling khusus untuk cover biodata */
+        .biodata-cover {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            width: 30%;
+        }
+        td {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="B.jpg" alt="Foto Saya">
+
+        <h2>Biodata</h2>
+        <div class="biodata-cover">
+            <table>
+                <tr>
+                    <th>Nama:</th>
+                    <td>Daryl Grandy Karundeng</td>
+                </tr>
+                <tr>
+                    <th>Tempat, Tanggal Lahir:</th>
+                    <td>Cihampelas Bandung, 6 Desember 2003</td>
+                </tr>
+                <tr>
+                    <th>NIM:</th>
+                    <td>2382029</td>
+                </tr>
+                <tr>
+                    <th>Agama:</th>
+                    <td>Kristen</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Hobbies and Interest</h3>
+        <h4>List of Hobbies</h4>
+        <ul>
+            <li>Playing Basketball</li>
+            <li>Playing Games</li>
+            <li>Travelling</li>
+        </ul>
+        
+        <h5>List of Interests</h5>
+        <ol>
+            <li>Technology</li>
+            <li>Music</li>
+            <li>Sport</li>
+        </ol>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="myHoliday.html">My Holiday</a>
+        <a href="myregistration.html">Pendaftaran</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
